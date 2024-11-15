@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Ofertas</title>
+    <link rel="stylesheet" href="{% static 'css/editar_ofertas.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container-cabecalho">
+            <div class="logo">
+                <img src="/static/imagens/imagens_adicionar_ofertas/Logo (3).png" alt="">
+            </div>
+        
+            <div class="click-links">
+                <nav>
+                    <a href="{% url 'index' %}">Início</a>
+                </nav>
+                <nav>
+                    <a href="{% url 'minhas_ofertas' %}">Minhas Ofertas</a>
+                </nav>
+                <nav>
+                    <a href="{% url 'gerenciador_perfil_mercado' %}">Perfil</a>
+                </nav>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <h1>Editar Oferta</h1>
+
+        <div class="container-principal">
+            <div class="container-main">
+                <form action="" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="container-formulario">
+                        <label for="">Nome do Produto
+                            {{ form.nome }}
+                        </label>
+        
+                        <label for="">Descrição </label>
+                            {{ form.descricao }}
+
+                        <label for="">Categoria
+                            {{ form.categoria }}
+                        </label>
+        
+                    </div>
+    
+                    <div class="posicoes-lados">
+                        <div class="formulario-lado-direito">
+                            <label for="">Preço Antigo (R$)
+                                {{ form.preco_antigo }}
+                            </label>
+        
+                            <label for="">Data de Expiração
+                                {{ form.data_expiracao }}
+                            </label>
+                        </div>
+    
+                            
+                        <div class="formulario-lado-esquerdo">
+                            <label for="">Preço Atual (R$)
+                                {{ form.preco_atual }}
+                            </label>
+    
+                            <label for="">Quantidade Disponível
+                                {{ form.quantidade_disponivel }}
+                            </label>
+                        </div>
+                    </div>
+    
+                    <div class="formulario-imagem">
+                        <label for="descricao" >Imagem do Produto
+                            {{ form.imagem_produto }}
+                        </label>
+                    </div>
+    
+                    <div class="butao">
+                            <button type="submit">Salvar <img src="/static/imagens/imagens_adicionar_ofertas/plus (1).png" alt=""></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        © 2024 Modernize-se Mercado. Todos os direitos reservados.
+    </footer>
+</body>
+</html>

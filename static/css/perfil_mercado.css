@@ -1,0 +1,99 @@
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container-cabecalho{
+    display: flex;
+    align-items: center;
+}
+
+.imagem, .links, .perfil{
+    flex: 2;
+}
+
+.imagem{
+    margin-left: 5%;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+#link{
+    font-weight: bold;
+    color: black;
+    font-size: 110%;
+}
+
+.perfil{
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+}
+
+.butao{
+    display: flex;
+    justify-content: end;
+    margin-top: 5%;
+}
+
+button{
+    background-color: #00265A;
+    color: white;
+    width: 20%;
+    height: 7vh;
+    border-radius: 10px;
+    font-size: 120%;
+    border: white;
+}
+
+.informacoes-gerais{
+    display: flex;
+}
+
+.link-contatos, .link-informacoes{
+    flex: 1;
+    width: 50%;
+
+}
+
+.link-informacoes{
+    text-align: right;
+}
+
+#imagem-mercado{
+    width: 100%;
+    border-radius: 20px;
+}
+
+h5{
+    font-size: 115%;
+}
+
+p{
+    font-weight: bolder;
+    word-spacing: 50px;
+    color: #00265A;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+main{
+    margin: 5%;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 15vh;
+    background: var(--1, #00265A);
+}

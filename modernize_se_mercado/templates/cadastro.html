@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="{% static 'css/cadastro.css' %}">
+</head>
+<body>
+    <main>
+        <div class="logomarca">
+            <a href="">
+                <img src="/static/imagens/imagem_cadastro/Logo (2).png" alt="">
+            </a>
+        </div>
+
+        <h1>Cadastre seu Mercado</h1>
+
+        <div class="container-formulario">
+            <form action="" method="post">
+                {% csrf_token %}
+                {{ form.non_field_errors }}
+                <div class="cadastro-lado-esquerdo">
+                    <label for="id_nome_mercado">Nome do mercado</label>
+                        {{ form.nome_mercado }}
+                        {{ form.nome_mercado.errors }}
+                    <label for="id_cnpj">CNPJ
+                        {{ form.cnpj }}
+                        {{ form.cnpj.errors }}
+                    </label>
+                    <label for="id_endereco">Endereço
+                        {{ form.endereco }}
+                        {{ form.endereco.errors }}
+                    </label>
+                    <label for="id_telefone">Telefone
+                        {{ form.telefone }}
+                        {{ form.telefone.errors }}
+                    </label>
+                </div>
+
+                <div class="cadastro-lado-direito">
+                    <label for="id_email">Email
+                        {{ form.email }}
+                        {{ form.email.errors }}
+                    </label>
+                    <label for="id_password1">Crie uma senha
+                        {{ form.password1 }}
+                        {{ form.password1.errors }}
+                    </label>
+                    <label for="id_password2">Confirme a senha
+                        {{ form.password2 }}
+                        {{ form.password2.errors }}
+                    </label>
+                    <div class="butao">
+                        <button type="submit">Cadastre seu Mercado <img src="/static/imagens/imagem_cadastro/briefcase.png" alt=""></button>
+                    </div>
+                    <p>Ao entrar, você concorda com nossos <a id="link-termos" href="">Termos de Serviço</a> e <a id="link-termos" href="]">Política de Privacidade</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

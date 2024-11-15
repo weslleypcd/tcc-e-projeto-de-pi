@@ -1,0 +1,36 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arquivo Base </title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    {% block head %}
+    <header>
+        <div class="container-cabecalho">
+            <div class="imagem">
+                <img src="/static/imagens/imagens_perfil_mercado/Logo.png" alt="">
+            </div>
+
+            <div class="links">
+                <nav><a id="link" href="http://127.0.0.1:8000/">Início</a></nav>
+                <nav><a id="link" href="http://127.0.0.1:8000/ofertas/">Ofertas</a></nav>
+                <nav><a id="link" href="http://127.0.0.1:8000/perfil_mercado/">Mercado</a></nav>
+            </div>
+
+            <div class="perfil">
+                <a id="link" href="">Perfil</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+    {% endblock %}
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

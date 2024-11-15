@@ -1,0 +1,148 @@
+body{
+    background: #F0F0F0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-principal{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    display: flex;
+    justify-content: left;
+    margin: 3%;
+}
+
+.container-cabecalho{
+    display: flex;
+}
+
+.logo, .click-links{
+    flex: 1;
+    width: 50%;
+}
+
+.click-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 5%;
+    font-size: 115%;
+}
+
+nav{
+    margin-left: 10%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+.container-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 80%;
+    height: 130vh;
+    border-radius: 20px;
+    margin-bottom: 7%;
+}
+
+form{
+    width: 80%;
+    font-weight: 600;
+    font-size: 98%;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 3%;
+    margin-top: 0.5%;
+    height: 5vh;
+    border-radius: 7px;
+    border: 1px solid var(--1, #00265A);
+    font-size: 110%;
+}
+
+#descricao{
+    height: 25vh;
+}
+
+#preco{
+    margin-bottom: 7%;
+}
+
+textarea[name="descricao"]{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--1, #00265A);
+    margin-bottom: 3%;
+}
+
+.container-formulario{
+    display: inline;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 4%;
+}
+
+.posicoes-lados{
+    display: flex;
+}
+
+.formulario-lado-esquerdo, .formulario-lado-direito{
+    flex: 1;
+    width: 50%;
+}
+
+.formulario-lado-esquerdo{
+    margin-left: 5%;
+}
+
+.formulario-imagem{
+    width: 30%;
+}
+
+.butao{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+img{
+    margin-left: 3%;
+}
+
+button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #00265A;
+    color: white;
+    height: 7vh;
+    width: 30%;
+    border-radius: 7px;
+    border: 1px solid var(--1, #00265A);
+    font-size: 120%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 15vh;
+    background: var(--1, #00265A);
+}

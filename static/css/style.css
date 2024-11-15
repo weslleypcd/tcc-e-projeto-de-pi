@@ -1,0 +1,179 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F0F0F0;
+}
+
+.container-cabecalho{
+    display: flex;
+}
+
+.logomarca, .click-menu, .click-link-perfil{
+    flex: 2;
+    width: 30%;
+}
+
+.click-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click-link-perfil{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 4%;
+}
+
+.logomarca{
+    margin-left: 3%;
+}
+
+nav{
+    margin-right: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 115%;
+}
+
+.container-superior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--1, #00265A);
+    width: 100%;
+    height: 45vh;
+    color: white;
+}
+
+p{
+    font-size: 200%;
+}
+
+#titulo-produto{
+    font-size: 150%;
+}
+
+#descricao-produto{
+    width: 100%;
+    height: auto;
+    word-wrap: break-word; 
+    white-space: normal; 
+    font-size: 125%;
+}
+
+#preco{
+    display: flex;
+    justify-content: left;
+    font-size: 180%;
+    font-weight: bold;
+}
+
+.descricao{
+    text-align: left;
+    width: 70%;
+}
+
+#butao-ver-ofertas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.butao{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#tag-butao{
+    margin-left: 5%;
+}
+
+h2{
+    font-size: 110%;
+}
+
+h1{
+    height: 2vh;
+    font-size: 280%;
+}
+
+button{
+    width: 15%;
+    height: 7vh;
+    border: 2px solid #00265A;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 105%;
+}
+
+#ofertas-destaque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 250%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+
+.catalogo-destaque{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 70%;
+}
+
+.container-produto{
+    display: flex;
+}
+
+.nome-produto, .local-loja{
+    flex: 1;
+}
+
+.nome-produto{
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+.local-loja{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.produto{
+    margin: 10px;
+    padding: 10px;
+    margin-left: 0;
+    width: 200px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid var(--1, #00265A);;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 15vh;
+    background: var(--1, #00265A);
+}

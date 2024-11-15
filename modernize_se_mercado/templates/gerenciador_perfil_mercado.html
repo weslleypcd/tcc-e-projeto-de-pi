@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Perfil do Mercado</title>
+    <link rel="stylesheet" href="{% static 'css/gerenciador_perfil_mercado.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container-cabecalho">
+            <div class="imagem">
+                <img src="/static/imagens/imagens_perfil_mercado/Logo.png" alt="">
+            </div>
+
+            <div class="links">
+                <nav><a id="link" href="http://127.0.0.1:8000/">Início</a></nav>
+                <nav><a id="link" href="http://127.0.0.1:8000/ofertas/">Ofertas</a></nav>
+                <nav><a id="link" href="http://127.0.0.1:8000/perfil_mercado/">Mercados</a></nav>
+            </div>
+
+            <div class="perfil">
+                <a id="link" href="http://127.0.0.1:8000/minhas_ofertas">Minhas ofertas</a>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Mercado X</h2>
+                <div class="logo-mercado">
+                    <img id="imagem-mercado" src="/static/imagens/imagens_perfil_mercado/depositphotos_442179284-stock-photo-shopping-cart-packages-shelves-supermarket.jpg" alt="">
+                </div>
+
+            <div class="informacoes-gerais">
+                <div class="link-contatos">
+                    <h5><img src="/static/imagens/imagens_perfil_mercado/map-pin.png" alt="">   Avenida Principal, 1000</h5>
+                    <h5><img src="/static/imagens/imagens_perfil_mercado/phone.png" alt="">   (11) 1234-5789</h5/>
+                    <h5><img src="/static/imagens/imagens_perfil_mercado/mail.png" alt="">   contato@mercado.com</h5>
+                    <h5><img src="/static/imagens/imagens_perfil_mercado/globe.png" alt="">   https://mercadocentral.com.br</h5/>
+                </div>
+    
+                <div class="link-informacoes">
+                    <h5><img src="/static/imagens/imagens_perfil_mercado/star.png" alt="">   4.7 (523 avaliações)</h5>
+                    <h5>37 ofertas ativas</h5>
+                    <h5>Segunda a sábado: 07:00 - 22:00, Domingo: 08:00 - 20:00</h5>
+                </div>    
+            </div>
+          
+        <h3>Sobre o Mercado</h3>
+        <div class="texto-sobre">
+            O Mercado Central é conhecido por oferecer produtos frescos e de alta qualidade. Com uma ampla variedade de itens, desde frutas e verduras até produtos gourmet, atendemos às necessidades de todos os nossos clientes.
+        </div>
+        <h3>Categorias</h3>
+        <p><a href="">Frutas Latocínio Bebidas Orgânicos Produtos Verduras Carnes Padaria</a></p>    
+        <div class="butao">
+            <a id="link-butao-1" href="http://127.0.0.1:8000/perfil_mercado_editar">
+                <button id="butao-1">Editar Perfil <img id="card-butao-1" src="/static/imagens/gerenciador_perfil_mercado/edit (2).png" alt=""></button>
+            </a>
+            <a id="link-butao-2" href="http://127.0.0.1:8000/adicionar_ofertas/">
+                <button id="butao-2">Adicionar Ofertas <img id="card-butao-2" src="/static/imagens/gerenciador_perfil_mercado/plus (2).png" alt=""></button>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        © 2024 Modernize-se Mercado. Todos os direitos reservados
+    </footer>
+
+</body>
+</html>

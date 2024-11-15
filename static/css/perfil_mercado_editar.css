@@ -1,0 +1,198 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F0F0F0;
+    margin: 0;
+}
+
+.container-cabecalho{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+.links{
+    display: flex;
+}
+
+nav{
+    margin-right: 10%;
+}
+
+a{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-right: 10%;
+    color: black;
+}
+
+.imagem, .links, .perfil{
+    flex: 1;
+}
+
+.imagem{
+    min-width: 20%;
+}
+
+.perfil{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#imagem-logo{
+    width: 15%;
+    margin-left: 5%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-central{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2%;
+    width: 80%;
+    height: 155vh;
+    margin-bottom: 5%;
+    background: white;
+    border-radius: 20px;
+}
+
+h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.container-imagens{
+    display: flex;
+}
+
+.container-main{
+    width: 90%;
+    font-weight: bold;
+    font-size: 99%;
+}
+
+.posicoes-colunas{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+input{
+    height: 5vh;
+    width: 100%;
+    margin-top: 0.5%;
+    margin-bottom: 10%;
+    border-radius: 7px;
+    border: 1px solid var(--1, #00265A);
+    font-size: 105%;
+}
+
+.coluna-esquerda, .coluna-direita{
+    flex: 1;
+    width: 50%;
+}
+
+.coluna-direita{
+    margin-left: 5%;
+}
+
+#descricao{
+    height: 14vh;
+}
+
+
+.botoes{
+    display: flex;
+    gap: 5%;
+    justify-content: end;
+}
+
+#card-butao-2{
+    margin-left: 3%;
+}
+
+.adicionar-imagens {
+    display: flex;
+    gap: 6%;
+    align-items: center;
+    width: 50%; 
+}
+
+.imagem, .link-adicionar-imagem {
+    flex: 1;
+    min-width: 45%; 
+    max-width: 45%;
+}
+
+.imagem img {
+    width: 100%; 
+}
+
+#imagem-mercado{
+    border-radius: 10px;
+    margin-top: 4%;
+    margin-bottom: 15%;
+}
+
+.link-adicionar-imagem label {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    width: 70%;
+}
+
+#butao-2{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 9vh;
+    border-radius: 10px;
+    border: 1px solid var(--1, #00265A);
+    color: white;
+    background-color: #00265A;
+    font-size: 115%;
+    font-weight: bold;
+}
+
+#butao-1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 9vh;
+    border-radius: 10px;
+    border: 1px solid var(--1, #00265A);
+    background-color: white;
+    color: #00265A;
+    font-size: 115%;
+    font-weight: bold;    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 15vh;
+    background: var(--1, #00265A);
+}

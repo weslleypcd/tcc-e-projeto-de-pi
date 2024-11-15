@@ -1,0 +1,40 @@
+body{
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.container-cabecalho{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.imagem, .links, .perfil{
+    flex: 2;
+}
+
+.imagem{
+    margin-left: 5%;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#link{
+    font-weight: bold;
+    color: black;
+    font-size: 110%;
+}
+
+.perfil{
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+}

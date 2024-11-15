@@ -1,0 +1,200 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F0F0F0;
+    margin: 0;
+}
+
+main{
+    margin: 10%;
+    padding-bottom: 5%;
+    background: white;
+    border-radius: 20px;
+}
+
+header{
+    width: 100%;
+}
+
+.links-superior{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.container-cabecalho{
+    display: flex;
+}
+
+.logomarca, .links-superior{
+    flex: 1;
+    width: 50%;
+}
+
+hr{
+    padding-top: ;
+}
+
+nav{
+    padding-top: 2%;
+    margin-left: 2%;
+    margin-right: 3%;
+}
+
+#click-link{
+    color: black;
+    text-decoration: none;
+    font-size: 110%;
+}
+
+
+th#status{
+    width: 15%;
+    text-align: center;
+}
+
+.container-main{
+    display: flex;
+    justify-content: center;
+}
+
+.acoes{
+    width: 10%;
+    padding-left: 0%;
+}
+
+#butao-adicionar{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%
+}
+
+img{
+    margin-left: 7%;
+}
+
+.container-ofertas{
+    display: flex;
+    width: 100%;
+}
+
+.titulo, .butao{
+    flex: 1;
+    padding-left: 7%;
+    padding-top: 3%;
+}
+
+.butao{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+    width: 100%;
+}
+
+#lupa{
+    margin-left: 11%;
+}
+
+a{
+    text-decoration: none;
+    width: 100%;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--1, #00265A);
+    border-color: white;
+    border-radius: 10px;
+    width: 50%;
+    height: 8vh;
+    color: white;
+    font-size: 120%;
+}
+
+.coluna-borda{
+    font-weight: bolder;
+}
+ 
+input{
+    border: 1px solid #00265A;
+    width: 25%;
+    height: 5vh;
+    margin-left: 9.9%;
+    margin-bottom: 6%;
+    margin-top: 2%;
+    border-radius: 10px;
+    font-size: 115%;
+}
+
+.buscar img#lupa {
+    position: absolute;
+    top: 32%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+}  
+
+.buscar{
+    position: relative;
+    width: 100%;
+}
+  
+.buscar input[type="text"] {
+    width: 30%;
+    padding: 5px 20px 10px 40px; 
+    box-sizing: border-box;
+}  
+
+table {
+    justify-content: center;
+    width: 80%;
+    border-collapse: separate;
+    border-radius: 20px;
+    border: 1px solid #00265A;
+    border-spacing: 0;
+    border-top: 0.7px;
+    border-bottom: 0.7px;
+    overflow: hidden;   
+}
+
+th, td {
+    text-align: center;
+    padding: 2%;
+    border: none
+}
+
+th, td {
+    align-items: center;
+    border-bottom: 0.7px solid var(--1, #00265A);
+}
+
+th{
+    color: var(--1, #00265A);
+    border-bottom: 0.7px solid var(--1, #00265A);
+    border-top: 0.7px solid var(--1, #00265A);
+}
+
+thead{
+    background: white;
+}
+
+thead{
+    border-left: 0.7px solid var(--1, #00265A);
+    border-right: 0.7px solid var(--1, #00265A);
+}
+
+tbody{
+    border-right: 0.7px solid var(--1, #00265A);
+    border-left: 0.7px solid var(--1, #00265A);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 15vh;
+    background: var(--1, #00265A);
+}

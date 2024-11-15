@@ -1,0 +1,244 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F0F0F0;
+}
+
+.container-cabecalho{
+    display: flex;
+}
+
+.logomarca, .click-menu, .click-link-perfil{
+    flex: 2;
+    width: 30%;
+}
+
+.click-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click-link-perfil{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 4%;
+}
+
+.logomarca{
+    margin-left: 3%;
+}
+
+nav{
+    margin-right: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 115%;
+}
+
+.container-superior{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--1, #00265A);
+    width: 100%;
+    height: 45vh;
+    color: white;
+}
+
+p{
+    font-size: 200%;
+}
+
+h1{
+    font-size: 300%;
+    height: 2vh;
+}
+
+h2{
+    font-size: 12%;
+    margin-left: 2%;
+}
+
+label{
+    margin-left: 2%;
+}
+
+input{
+    width: 94.7%;
+    height: 4vh;
+    border-radius: 7px;
+    border: 1px solid var(--1, #00265A);;    
+}
+
+#descricao-produto{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    word-wrap: break-word; 
+    white-space: normal; 
+    font-size: 115%;
+    font-weight: bold;
+    color: #545454;
+}
+
+#preco{
+    display: flex;
+    justify-content: left;
+    font-size: 180%;
+    font-weight: bold;
+}
+
+.descricao{
+    align-items: end;
+    width: 90%;
+}
+
+.butao-ver-ofertas{
+    display: flex;
+    justify-content: end;
+    width: 70%;   
+}
+
+.butao{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+h3, h4{
+    flex: 1;
+}
+
+#tag-butao{
+    margin-left: 5%;
+}
+
+button{
+    width: 15%;
+    height: 7vh;
+    border: 2px solid #00265A;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-size: 105%;
+}
+
+#ofertas-destaque{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 250%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+
+.catalogo-destaque{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 70%;
+}
+
+.container-produto{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.nome-produto{
+    display: flex;
+    text-align: center;
+    font-size: 120%;
+}
+
+.local-loja{
+    display: flex;
+    justify-content: right;
+    text-align: right;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+#imagem-local{
+    width: 10%;
+    height: auto;
+    margin-right: 3%;
+}
+
+#imagem-telefone{
+    width: 10%;
+    height: auto;
+    margin-right: 3%;
+}
+
+#categorias{
+    color: #00265A;
+    font-weight: bold;
+    font-size: 120%;
+    word-spacing: 15px;
+    width: 110%;
+}
+
+#butao-ver-ofertas{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#link-ver-ofertas{
+    display: flex;
+    align-items: flex-end;
+    width: 150%;
+    font-weight: bolder;
+}
+
+#imagem-butao-ver-ofertas{
+    width: 10%;
+    margin-left: 5%;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7vh;
+    background: var(--3, #00265A);
+    border: 1px solid var(--1, #00265A);
+    color: white;
+    font-size: 120%;
+    font-weight: bolder;
+}
+
+.produto{
+    margin: 10px;
+    padding: 10px;
+    margin-left: 0;
+    width: 215px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid var(--1, #00265A);
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 15vh;
+    background: var(--1, #00265A);
+}

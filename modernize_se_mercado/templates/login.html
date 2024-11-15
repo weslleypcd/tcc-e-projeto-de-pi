@@ -1,0 +1,62 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <main>
+        <div class="logomarca">
+            <img id="logo" src="/static/imagens/imagens_login/Logo (2).png" alt="">
+        </div>
+       
+        <h2>Entre na sua conta</h2>
+            <div class="login">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <div class="dados-login">    
+                        <label for="">Usuário
+                            {{ form.username }}
+                        </label>
+                        <label for="">Senha
+                            {{ form.password }}
+                        </label>
+                    </div>
+
+                    {% if form.non_field_errors %} 
+                        <p style="color: red;">{{ form.non_field_errors }}</p> 
+                    {% endif %}
+
+                    <div class="container-login">
+                        <div class="logar">    
+                        
+                            <div class="lembrar_me">
+                                {{ form.remember_me }}
+                                <label for="lembrar_mim">Lembrar-me</label>
+                            </div>
+                        </div>    
+                            
+                        <div class="esquecer-senha">
+                            <a href="">Esqueceu sua senha?</a>
+                            <a href="">Entre com google</a>
+                        </div>
+                    </div>
+                    
+                    <div class="click-butao">
+                        <a id="link-butao" href="http://127.0.0.1:8000/perfil_mercado/">
+                            <button type="submit">Entrar<img id="entrar" src="/static/imagens/imagens_login/log-in.png" alt=""></button>
+                        </a>
+                    </div>
+
+                    <div class="cadastrar-login">
+                        <p id="nao-login" >Não possui login? <a id="cadastre-se" href="http://127.0.0.1:8000/cadastro/">Cadastre-se aqui</a></p>
+                    </div>
+
+                    <p>Ao entrar, você concorda com nossos <a href="" id="link-termos" >Termos de Serviço</a> e <a href="" id="link-termos" >Políticas de Privacidade</a></p>
+                </form>
+        </div>
+    </main>
+</html>
