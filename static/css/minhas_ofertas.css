@@ -30,10 +30,6 @@ header{
     width: 50%;
 }
 
-hr{
-    padding-top: ;
-}
-
 nav{
     padding-top: 2%;
     margin-left: 2%;
@@ -48,7 +44,7 @@ nav{
 
 
 th#status{
-    width: 15%;
+    width: 10%;
     text-align: center;
 }
 
@@ -59,7 +55,6 @@ th#status{
 
 .acoes{
     width: 10%;
-    padding-left: 0%;
 }
 
 #butao-adicionar{

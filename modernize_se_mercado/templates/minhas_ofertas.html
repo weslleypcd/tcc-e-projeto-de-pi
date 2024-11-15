@@ -48,8 +48,8 @@
                 <tr>
                     <th>Nome</th>
                     <th>Categorias</th>
-                    <th>Preço Atual</th>
-                    <th>Preço Antigo</th>
+                    <th id="alinhar" >Preço Atual</th>
+                    <th id="alinhar" >Preço Antigo</th>
                     <th>Quantidade</th>
                     <th>Expiração</th>
                     <th id="status">Status</th>
@@ -70,15 +70,6 @@
                         <a href="{% url 'editar_oferta' oferta.id %}"><img src="/static/imagens/imagens_minhas_ofertas/edit (1).png" alt=""></a><a href="{% url 'deletar_oferta' oferta.id %}"><img src="/static/imagens/imagens_minhas_ofertas/trash-2 (1).png" alt=""></td></a>
                 </tr>
                 {% endfor %}
-                    <td class="coluna-borda">Maça verde</td>
-                    <td>Fruta</td>
-                    <td>R$ 5,99</td>
-                    <td>R$ 5,99</td>
-                    <td>50</td>
-                    <td>10/10/2024</td>
-                    <td>Ativo</td>
-                    <td><a href=""><img src="/static/imagens/imagens_minhas_ofertas/edit (1).png" alt=""></a><a href=""><img src="/static/imagens/imagens_minhas_ofertas/trash-2 (1).png" alt=""></td></a>
-                </tr>
                 
             </tbody>
         </table>
